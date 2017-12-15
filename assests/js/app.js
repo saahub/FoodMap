@@ -6,10 +6,10 @@ $(document).ready(function() {
   function showMe(){
     $('#all').show();
   };
-
+  });
   $('#btn').click(function(){
   	$('#modal').modal();
-  });
+
 
   //para el modal //
   $(document).ready(function() {    
