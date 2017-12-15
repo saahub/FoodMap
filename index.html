@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- meta viewport -->
+  <meta name="viewport" content="width=device-width,
+  initial-scale=1.0, maximum-scale=1.0">
+  <!-- enlace jquery -->
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <!-- enlace Materialize -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <!-- enlace style css -->
+  <link rel="stylesheet" href="assests/css/main.css">
+  <title>DrinkMap</title>
+</head>
+<body>
+      <!-- splash -->
+        <div id="splash">
+          <h1 class="center">DrinkMap</h1>
+      <!-- spinner -->
+      <div class="preloader">
+  <div class="preloader-wrapper big active">
+    <div class="spinner-layer spinner-blue-only">
+      <div class="circle-clipper left">
+        <div class="circle"></div>
+      </div><div class="gap-patch">
+        <div class="circle"></div>
+      </div><div class="circle-clipper right">
+        <div class="circle"></div>
+      </div>
+    </div>
+   </div>
+   </div>
+  </div>
+  <div class="container" id="all">
+    <div class="row">
+      <div class="col s12">
+        <h2 id="center">Drink Map</h2>
+        <hr>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d53283.954135750304!2d-70.63951307810973!3d-33.416800750224255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1srestaurantes!5e0!3m2!1ses!2scl!4v1513211767731" width="300" height="260" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div><!-- cierre col -->
+    </div><!-- cierre row -->
+    <div class="row">
+      <div class="col s12">
+        <h3 id="center">Drink Near You</h3>
+      </div>
+    </div>
+    <!-- Menú -->
+  <div class="menu_to_select" id="modal">
+    <select id="drinkMenu" class="btn">
+      <option value="0">restaurantes</option>
+      <option value="Blondy">Beer Blondy</option>
+      <option value="Ambar">Beer Ambar</option>
+      <option value="Black">Beer Black</option>
+    </select>
+  </div>
+<div id="beerContainer">
+            <div class="row pale-ale">
+        <div class="col s4">
+          <div class="card">
+            <div class="card-image">
+              <img src="assests/img/1-157-300x275.jpg" id="beer4">
+              <span class="card-title">Title</span>
+            </div>
+            <div class="card-action">
+              <a href="#" id="modal">link</a>
+            </div>
+          </div>
+        </div>
+          <div class="col s4">
+          <div class="card">
+            <div class="card-image">
+              <img src="assests/img/beer-blondy.jpg" id="beer3">
+              <span class="card-title">Title</span>
+            </div>
+            <div class="card-action">
+              <a href="#">Blondy</a>
+            </div>
+          </div>
+        </div>
+          <div class="col s4">
+          <div class="card">
+            <div class="card-image">
+              <img src="assests/img/descarga.jpg" id="beer5">
+              <span class="card-title">Title</span>
+            </div>
+            <div class="card-action">
+              <a href="#" id="modal">link</a>
+            </div>
+          </div>
+        </div>
+        </div>
+            <div class="row pale-ale">
+        <div class="col s4">
+          <div class="card">
+            <div class="card-image">
+              <img src="assests/img/1-157-300x275.jpg" id="beer4">
+              <span class="card-title">Title</span>
+            </div>
+            <div class="card-action">
+              <a href="#">link</a>
+            </div>
+          </div>
+        </div>
+          <div class="col s4">
+          <div class="card">
+            <div class="card-image">
+              <img src="assests/img/beer-blondy.jpg" id="beer3">
+              <span class="card-title">Title</span>
+            </div>
+            <div class="card-action">
+              <a href="#">Blondy</a>
+            </div>
+          </div>
+        </div>
+          <div class="col s4">
+          <div class="card">
+            <div class="card-image">
+              <img src="assests/img/descarga.jpg" id="beer5">
+              <span class="card-title">Title</span>
+            </div>
+            <div class="card-action">
+              <a href="#">link</a>
+            </div>
+          </div>
+        </div>
+        </div>
+
+  </div><!-- cierre container -->
+  <script src="assests/js/app.js"></script>
+</body>
+</html>

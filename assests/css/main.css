@@ -1,0 +1,57 @@
+body {
+	background-color: #443636;
+
+}
+
+.center {
+	text-align: center;
+	color :#E08435;
+	padding-top: 150px;
+}
+
+.preloader {
+	color: #E08435;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#center {
+	text-align: center;
+	color :#E08435;
+}
+
+
+
+iframe {
+	display: flex;
+	padding-top: 5em;
+  outline: 1px solid #fff;
+  padding: 0.5em;
+  margin: 3em auto;
+}
+
+.btn {
+	color:#E08435;
+	background-color: grey;
+	float:left;
+  align-items: center;
+}
+//para el modal
+#mask {
+  position:absolute;
+  z-index:9000;
+  background-color:#000;
+  display:none;
+}
+ 
+#boxes .window {
+  position:absolute;
+  width:440px;
+  height:200px;
+  display:none;
+  z-index:9999;
+  padding:20px;
+}
