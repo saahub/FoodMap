@@ -5,13 +5,127 @@ $(document).ready(function() {
 
   function showMe(){
     $('#all').show();
-  };
+  }
+
+  var container = $('#beerContainer');
+
+/*al cambiar el menu debe ejecutarse esta funcion*/
+  $('#drinkMenu').on('change',function(){
+
+    /*guardo el valor de la opcion escogida en menu en variable*/
+    var beers = $('#drinkMenu').val();
+    if (beers === 'Blonde'){
+      container.html('<div class="row">'+
+      '<div class="col s12 m4 l4">'+
+        '<div class="card">'+
+          '<div class="card-image">'+
+           '<img src="assests/img/1-157-300x275.jpg">'+
+            '</div>'+
+            '<div class="card-action">'+
+              '<a href="#">Blondy</a>'+
+            '</div>'+
+          '</div>'+
+        '</div>'+
+          '<div class="col s12 m4 l4">'+
+          '<div class="card">'+
+            '<div class="card-image">'+
+              '<img src="assests/img/beer-blondy.jpg">'+
+            '</div>'+
+            '<div class="card-action">'+
+              '<a href="#">Blonde</a>'+
+            '</div>'+
+          '</div>'+
+        '</div>'+
+          '<div class="col s12 m4 l4">'+
+          '<div class="card">'+
+            '<div class="card-image">'+
+              '<img src="assests/img/descarga.jpg">'+
+            '</div>'+
+            '<div class="card-action">'+
+              '<a href="#">blonde</a>'+
+            '</div>'+
+          '</div>'+
+        '</div><!-- cierre col 4 -->'+
+        '</div><!-- cierre blonde -->');
+    };
+    if (beers === 'Black'){
+      container.html('<div class="row black-beer">'+
+        '<div class="col s12 m4 l4">'+
+          '<div class="card">'+
+            '<div class="card-image">'+
+              '<img src="assests/img/11.jpeg">'+
+            '</div>'+
+            '<div class="card-action">'+
+              '<a href="#">Black</a>'+
+            '</div>'+
+          '</div>'+
+        '</div>'+
+          '<div class="col s12 m4 l4">'+
+          '<div class="card">'+
+            '<div class="card-image">'+
+              '<img src="assests/img/sabana-oscura2-300x275.png">'+
+            '</div>'+
+            '<div class="card-action">'+
+              '<a href="#">Black</a>'+
+            '</div>'+
+          '</div>'+
+        '</div>'+
+          '<div class="col s12 m4 l4">'+
+          '<div class="card">'+
+            '<div class="card-image">'+
+              '<img src="assests/img/beer-bock.jpg">'+
+            '</div>'+
+            '<div class="card-action">'+
+              '<a href="#">black</a>'+
+            '</div>'+
+          '</div>'+
+        '</div><!-- cierre col 4 -->'+
+        '</div><!-- cierre black-beer -->');
+    };
+    if (beers === 'Amber'){
+      container.html('<div class="row Amber-Beer">'+
+        '<div class="col s12 m4 l4">'+
+          '<div class="card">'+
+            '<div class="card-image">'+
+              '<img src="assests/img/ambarbeer1.jpg">'+
+            '</div>'+
+            '<div class="card-action">'+
+              '<a href="#">Amber</a>'+
+            '</div>'+
+          '</div>'+
+        '</div>'+
+          '<div class="col s12 m4 l4">'+
+          '<div class="card">'+
+            '<div class="card-image">'+
+              '<img src="assests/img/ambarbeer2.jpg">'+
+            '</div>'+
+            '<div class="card-action">'+
+              '<a href="#">Amber</a>'+
+            '</div>'+
+          '</div>'+
+        '</div>'+
+          '<div class="col s12 m4 l4">'+
+          '<div class="card">'+
+            '<div class="card-image">'+
+              '<img src="assests/img/ambarbeer3.jpg">'+
+            '</div>'+
+          '<div class="card-action">'+
+              '<a href="#">Amber</a>'+
+            '</div>'+
+          '</div>'+
+        '</div><!-- cierre col 4 -->'+
+        '</div><!-- cierre Amber-beer -->');
+     };
+    })
   });
+
+/*
+
   $('#btn').click(function(){
-  	$('#modal').modal();
+    $('#modal').modal();
 
 
-  //para el modal //
+
   $(document).ready(function() {    
  
     //select all the a tag with name equal to modal  
@@ -58,5 +172,4 @@ $(document).ready(function() {
         $('.window').hide();  
     });          
      
-});  
-});
+});  */

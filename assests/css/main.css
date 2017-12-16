@@ -23,8 +23,6 @@ body {
 	color :#E08435;
 }
 
-
-
 iframe {
 	display: flex;
 	padding-top: 5em;
@@ -39,11 +37,10 @@ iframe {
 	float:left;
   align-items: center;
 }
-//para el modal
+/*para el modal*/
 #mask {
   position:absolute;
   z-index:9000;
-  background-color:#000;
   display:none;
 }
  
